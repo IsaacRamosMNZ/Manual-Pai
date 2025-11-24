@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guia Pais — Manual Interativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="branding">
+        <div class="logo">💙</div>
+        <h1>Guia Pais</h1>
+        <p class="tag">Manual interativo para pais — versão protótipo</p>
+      </div>
+      <nav class="nav">
+        <button id="editProfileBtn">Editar perfil</button>
+        <button id="resetBtn">Reiniciar caminho</button>
+      </nav>
+      <div class="version">Local • Protótipo</div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div id="greeting">Bem-vindo — por favor, informe seu perfil</div>
+      </header>
+
+      <section id="mainArea">
+        <div id="onboardingWrapper"></div>
+
+        <section id="toc" class="panel hidden">
+          <h2>Índice</h2>
+          <div class="grid-cards">
+            <article class="card" data-id="1">
+              <h3>Relação Afetiva</h3>
+              <p>Vínculo, presença emocional e exercícios práticos.</p>
+              <div class="card-actions">
+                <a class="btn" href="capitulo-1.html">Abrir capítulo</a>
+              </div>
+            </article>
+
+            <article class="card" data-id="2">
+              <h3>Disciplina Positiva</h3>
+              <p>Limites, rotinas e alternativas à punição.</p>
+              <div class="card-actions">
+                <a class="btn" href="capitulo-2.html">Abrir capítulo</a>
+              </div>
+            </article>
+
+            <article class="card" data-id="3">
+              <h3>Comunicação e Escuta</h3>
+              <p>Escuta ativa, conversar sobre emoções e conflitos.</p>
+              <div class="card-actions">
+                <a class="btn" href="capitulo-3.html">Abrir capítulo</a>
+              </div>
+            </article>
+
+            <article class="card" data-id="4">
+              <h3>Saúde e Segurança</h3>
+              <p>Sono, alimentação e segurança em casa.</p>
+              <div class="card-actions">
+                <a class="btn" href="capitulo-4.html">Abrir capítulo</a>
+              </div>
+            </article>
+
+            <article class="card" data-id="5">
+              <h3>Cuidando de Si</h3>
+              <p>Autocuidado, gestão de stress e suporte.</p>
+              <div class="card-actions">
+                <a class="btn" href="capitulo-5.html">Abrir capítulo</a>
+              </div>
+            </article>
+
+            <article class="card" data-id="6">
+              <h3>Atividades e Presentes</h3>
+              <p>Ideias para aproveitar tempo juntos economicamente.</p>
+              <div class="card-actions">
+                <a class="btn" href="capitulo-6.html">Abrir capítulo</a>
+              </div>
+            </article>
+
+            <article class="card" data-id="7">
+              <h3>Educação Financeira</h3>
+              <p>Ensinar valores e consumo consciente.</p>
+              <div class="card-actions">
+                <a class="btn" href="capitulo-7.html">Abrir capítulo</a>
+              </div>
+            </article>
+
+            <article class="card" data-id="8">
+              <h3>Apoio Escolar</h3>
+              <p>Estratégias para acompanhamento educacional.</p>
+              <div class="card-actions">
+                <a class="btn" href="capitulo-8.html">Abrir capítulo</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="advice" class="panel hidden">
+          <h2>Sugestões</h2>
+          <div id="suggestions">Faça escolhas no índice para ver recomendações.</div>
+        </section>
+
+        <section id="nonParent" class="panel hidden">
+          <h2>Prevenção e Saúde Sexual</h2>
+          <p>Informações importantes sobre prevenção de infecções sexualmente transmissíveis e saúde reprodutiva.</p>
+
+          <h3>Conteúdo educativo</h3>
+          <div class="video-container">
+            <iframe 
+              id="preventionVideo"
+              width="100%" 
+              height="480" 
+              src="https://www.youtube.com/embed/MxPFuf3NceY" 
+              title="Vídeo sobre Prevenção"
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <h3>Dicas importantes</h3>
+          <ul>
+            <li>Use preservativo em relações casuais e quando não há exame recente de DSTs.</li>
+            <li>Preservativos masculinos e femininos existem; escolha o que for confortável e disponível.</li>
+            <li>Faça testes de DST regularmente, especialmente se tiver múltiplos parceiros.</li>
+            <li>Consulte um serviço de saúde para aconselhamento, testes gratuitos e distribuição de preservativos.</li>
+            <li>Converse abertamente com parceiros sobre saúde sexual e consenso.</li>
+          </ul>
+
+          <div class="info-box">
+            <h4>Recursos úteis</h4>
+            <p><strong>Para mais informações:</strong> Procure o centro de saúde mais próximo ou ligue para linhas de informação sobre saúde pública em sua região.</p>
+          </div>
+
+          <div class="action-box">
+            <button id="backToProfileBtn" class="btn btn-primary">Acessar Capítulos</button>
+          </div>
+        </section>
+
+      </section>
+
+      <footer class="footer">
+        <small>Protótipo local — nenhum dado é enviado a servidores.</small>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
